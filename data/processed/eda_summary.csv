@@ -1,0 +1,17 @@
+Feature,Category,Total_Customers,Churned_Customers,ChurnRate
+Contract,Month-to-month,3875,1655,42.71
+Contract,One year,1473,166,11.27
+Contract,Two year,1695,48,2.83
+InternetService,DSL,2421,459,18.96
+InternetService,Fiber optic,3096,1297,41.89
+InternetService,No,1526,113,7.4
+PaymentMethod,Bank transfer (automatic),1544,258,16.71
+PaymentMethod,Credit card (automatic),1522,232,15.24
+PaymentMethod,Electronic check,2365,1071,45.29
+PaymentMethod,Mailed check,1612,308,19.11
+TechSupport,No,3473,1446,41.64
+TechSupport,No internet service,1526,113,7.4
+TechSupport,Yes,2044,310,15.17
+OnlineSecurity,No,3498,1461,41.77
+OnlineSecurity,No internet service,1526,113,7.4
+OnlineSecurity,Yes,2019,295,14.61
