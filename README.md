@@ -12,19 +12,18 @@ This project explores customer behavior, identifies customer segments with high 
 - [Business Problem](#-business-problem)
 - [Project Objectives](#-project-objectives)
 - [Dataset Description](#-dataset-description)
-- [Tools and Technologies](#-tools-and-technologies)
+- [Tools and Technologies](#tools-and-technologies)
 - [Project Workflow](#-project-workflow)
 - [Data Cleaning and Preparation](#-data-cleaning-and-preparation)
-- [Exploratory Data Analysis](#-exploratory-data-analysis)
-- [SQL Analysis](#-sql-analysis)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [SQL Analysis](#sql-analysis)
 - [Power BI Dashboard](#-power-bi-dashboard)
 - [Key Business Insights](#-key-business-insights)
 - [Business Recommendations](#-business-recommendations)
-- [Analytical Limitations](#-analytical-limitations)
+- [Analytical Limitations](#analytical-limitations)
 - [Conclusion](#-conclusion)
 - [Repository Structure](#-repository-structure)
-- [How to Run This Project](#-how-to-run-this-project)
-- [Author](#-author)
+- [How to Run This Project](#how-to-run-this-project)
 
 ---
 
@@ -102,6 +101,7 @@ The dataset contains several groups of variables:
 
 ---
 
+<a id="tools-and-technologies"></a>
 ## 🛠️ Tools and Technologies
 
 | Tool | Purpose |
@@ -195,6 +195,7 @@ Data cleaning and preparation were performed using Python and Pandas to improve 
 
 ---
 
+<a id="exploratory-data-analysis"></a>
 ## 📈 Exploratory Data Analysis (EDA)
 
 Exploratory Data Analysis was conducted using Python to understand the overall customer distribution, identify patterns, and explore relationships between customer characteristics and churn.
@@ -222,6 +223,7 @@ Exploratory Data Analysis was conducted using Python to understand the overall c
 
 ---
 
+<a id="sql-analysis"></a>
 ## 🗄️ SQL Analysis
 
 PostgreSQL was used to store and analyze the cleaned customer dataset.
@@ -332,7 +334,6 @@ Focuses on customer tenure, contract distribution, customer value, and retention
 
 ![Customer Segmentation & Retention](powerbi/screenshots/customer_segmentation.png)
 
-> **Note:** Replace the screenshot paths above with the actual image filenames and folder paths in your repository.
 
 ---
 
@@ -481,10 +482,9 @@ Based on the findings, the following strategies are proposed to improve customer
 - Develop targeted retention campaigns.
 - Evaluate campaign performance through measurable KPIs.
 
-> These recommendations are based on descriptive findings and observed customer patterns. Their effectiveness should be validated through implementation and performance measurement.
-
 ---
 
+<a id="analytical-limitations"></a>
 ## ⚠️ Analytical Limitations
 
 Several limitations should be considered when interpreting the results:
@@ -520,32 +520,42 @@ telco-customer-churn-analysis/
 │   │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 │   │
 │   └── processed/
-│       └── telco_customer_churn_cleaned.csv
-│
+│       ├── contract_churn_analysis.csv
+│       ├── eda_summary.csv
+│       ├── payment_churn_analysis.csv
+│       ├── telco_customer_churn_cleaned.csv
+│       └── tenure_churn_analysis.csv
+|
 ├── notebooks/
-│   └── telco_customer_churn_analysis.ipynb
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   └── 03_exploraty_data_analysis.ipynb
 │
-├── sql/
-│   ├── create_database.sql
-│   ├── data_validation.sql
-│   └── churn_analysis.sql
-│
-├── dashboard/
+├── powerbi/
 │   ├── telco_customer_churn.pbix
 │   │
 │   └── screenshots/
-│       ├── page-1.png
-│       ├── page-2.png
-│       └── page-3.png
+│       ├── customer_churn.png
+│       ├── customer_segmentation.png
+│       └── executive_overview.png
+|
+├── reports/
+│   ├── business_insights.md
+│   └── recommendations.md
 │
-├── README.md
-└── .gitignore
+├── sql/
+│   ├── 01_create_database.sql
+│   ├── 02_data_validation.sql
+│   ├── 03_business_analysis.sql
+│   └── 04_customer_segmentation.sql
+│
+└── README.md
 ```
 
-> The structure above is a recommended example. Adjust the filenames and folders to match the actual contents of your repository.
 
 ---
 
+<a id="how-to-run-this-project"></a>
 ## ⚙️ How to Run This Project
 
 ### 1. Clone the Repository
@@ -582,17 +592,3 @@ Open the `.pbix` file in Power BI Desktop.
 If necessary, update the PostgreSQL connection settings to match your local database configuration.
 
 ---
-
-## 👨‍💻 Author
-
-**Nur Faizal Basri**
-
-Master of Informatics Graduate | Aspiring Junior Data Analyst
-
-Interested in data analytics, business intelligence, data visualization, and data-driven decision-making.
-
-**GitHub:** [Your GitHub Profile](https://github.com/your-username)
-
----
-
-⭐ If you find this project useful, feel free to explore the repository and share your feedback.
